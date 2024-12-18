@@ -1,0 +1,103 @@
+.target {
+    background: linear-gradient(154deg, #4C9FFF 10.76%, #3593FF 40.42%, #004595 88.83%);
+
+    &_info {
+        color: #FFF;
+        font-family: "Yandex Sans Text";
+        font-size: 130px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 110px;
+        letter-spacing: -5.2px;
+        position: relative;
+
+        .top,
+        .bottom {
+            position: absolute;
+        }
+
+        .top {
+            right: 50px;
+            top: 20px;
+        }
+    }
+    &_line{
+        position: absolute;
+        bottom: 0;
+        right:-351px;
+    }
+    .container{
+        align-items:center;
+    }
+    .target_slide{
+        width:702px;
+        flex: 0 0 auto;
+        .slides_target{
+            margin: 0 auto;
+            width: fit-content;
+            width: 380px;
+            .slide_item {
+                background: #fff;
+                border-radius: 30px;
+                padding: 40px 65px 40px 40px;
+                width: 380px;
+                .slide_title {
+                    color: #2B4461;
+                    font-family: "Yandex Sans Text";
+                    font-size: 28px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 32px;
+                    letter-spacing: -1.12px;
+                    margin-top: 70px;
+
+                }
+    
+                .slide_description {
+                    color: #B2C4D9;
+                    font-family: "Yandex Sans Text";
+                    font-size: 21px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 24px;
+                    letter-spacing: -0.84px;
+                }
+            }
+        }
+     }
+
+     .slides_target{
+        position: relative;
+        // height: 300px;  /* Slayder balandligi */
+      }
+
+    padding-bottom: 70px;
+    .slides_target{
+        padding-top: 20px;
+        padding-bottom: 20px;
+        position: relative;
+    }
+
+    }
+.slick-slide{
+    transform: scale(.4);
+    &.slick-active{
+        transform: scale(.7);
+        opacity: 1;
+    }
+    // &.slick-cloned{
+    //     border-radius: 30px;
+    //     background: #00142a;
+    //     transform: scale(.8);
+    // }
+    &.slick-current{
+        border-radius: 30px;
+        background: #0c2f56;
+        transform: scale(1);
+        position: absolute; top: 0;
+        left: 0;
+        right: 0; 
+        margin: 0 auto;
+        z-index: 2;
+    }
+}

@@ -1,0 +1,88 @@
+.slides {
+    background: #F6F9FC;
+    padding-top: 78px;
+    padding-bottom: 70px;
+
+    .sliders {
+        margin-top: 40px;
+        // padding-left: 90px;
+        width: 100%;
+    }
+
+    .sliders_item {
+        padding: 0 35px;
+        width: calc(33.33% - 35px);
+
+        .slide_top {
+            position: relative;
+
+            .button {
+                border-radius: 20px 0px 20px 20px;
+                background: #FFF;
+                color: #3E98FF;
+                font-family: 'Inter';
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+                padding: 15px 20px;
+                display: inline-block;
+                position: absolute;
+                left: 20px;
+                top: 20px;
+
+                &.green {
+                    color: #8CBA8A;
+                }
+
+                &.crimson {
+                    color: #E3B5C1;
+                }
+            }
+
+            img {
+                width: 100%;
+                object-fit: contain;
+                border-radius: 16px;
+            }
+        }
+
+        .slide_info {
+            border-radius: 0 0 10px 10px;
+            padding: 40px;
+            border: 1px solid #00000011;
+            border-top: 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            transform: translateY(-10px);
+
+            p {
+                color: #2B4360;
+                font-family: "Yandex Sans Text";
+                font-size: 22px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+            }
+
+            .button {
+                border-radius: 8.881px;
+                background: #FF8C3A;
+                color: #FFF;
+                text-align: center;
+                text-shadow: 0px 0.592px 0px rgba(0, 0, 0, 0.15);
+                font-family: 'Inter';
+                font-size: 13.61px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                box-shadow: 0px 2.412px 0px 0px #E3792E, 5.921px 5.921px 23.684px 0px rgba(255, 255, 255, 0.30) inset;
+                display: inline-block;
+                padding: 22px 48px;
+            }
+        }
+    }
+
+    
+}

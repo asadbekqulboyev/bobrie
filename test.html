@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css" />
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css" />
+    <style>
+ body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f0f8ff;
+    }
+
+    /* Slider konteyneri */
+    .slider-container {
+      width: 300px; /* Sliderning eni */
+      height: 400px; /* Sliderning balandligi */
+      margin: 50px auto; /* Markazga joylash */
+      overflow: hidden;
+    }
+
+    /* Har bir slayd */
+    .slider .slide {
+      background-color: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      height: 120px; /* Slayd balandligi */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      font-size: 16px;
+      color: #333;
+    }
+
+    /* Matn */
+    .slider .slide h3 {
+      margin: 0;
+      font-size: 18px;
+      color: #333;
+    }
+
+    .slider .slide p {
+      margin: 5px 0 0;
+      font-size: 14px;
+      color: #777;
+    }
+    </style>
+</head>
+<body>
+
+    <div class="slider-container">
+        <div class="slider">
+          <div class="slide">
+            <h3>Joylashuv 1</h3>
+            <p>Viloyatni tanlang</p>
+          </div>
+          <div class="slide">
+            <h3>Joylashuv 2</h3>
+            <p>Shaharni ko'rsating</p>
+          </div>
+          <div class="slide">
+            <h3>Joylashuv 3</h3>
+            <p>Ko'chani aniqlang</p>
+          </div>
+          <div class="slide">
+            <h3>Joylashuv 4</h3>
+            <p>To'liq manzilni kiriting</p>
+          </div>
+        </div>
+      </div>
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+      <script>
+$(document).ready(function(){
+      $('.slider').slick({
+        vertical: true,          
+        autoplay: true,         
+        autoplaySpeed: 2000,    
+        slidesToShow: 3,       
+        slidesToScroll: 1,      
+        infinite: true,          
+        arrows: false,           
+        dots: false,             
+        cssEase: 'linear',       
+        speed: 1000,             
+      });
+    });
+      </script>
+</body>
+</html>

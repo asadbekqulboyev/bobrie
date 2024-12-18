@@ -1,0 +1,85 @@
+@font-face {
+  font-family: "Yandex Sans Text";
+  src: url("../fonts/YandexSansText-Light.ttf");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Yandex Sans Text";
+  src: url("../fonts/YandexSansText-Regular.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Yandex Sans Display";
+  src: url("../fonts/YandexSansDisplay-Regular.ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Yandex Sans Text";
+  src: url("../fonts/YandexSansText-Medium.ttf");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Yandex Sans Text";
+  src: url("../fonts/YandexSansText-Bold.ttf");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1564px;
+  width: 100%;
+  padding:  0 10px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  @media (max-width: 400px) {
+    padding: 0 12px;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+  background: none;
+}
+
+ul li,
+ol li {
+  list-style: none;
+}
+
+.wrapper {
+  overflow: hidden;
+}
+
+.section_title {
+  color: #2B4461;
+  font-family: "Yandex Sans Text";
+  font-size: 130px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 110px;
+  letter-spacing: -5.2px;
+}

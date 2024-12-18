@@ -1,0 +1,116 @@
+.footer {
+    // opacity: 0.45;
+    background: linear-gradient(154deg, #4C9FFF 10.29%, #3593FF 39.95%, #004595 88.36%);
+    padding-top: 126px;
+    width: 100%;
+
+    &_top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+
+        .phone {
+            color: #FFF;
+            font-family: "Yandex Sans Text";
+            font-size: 72px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+        }
+
+        ul {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+
+            a {
+                width: 52px;
+                height: 52px;
+                display: flex;
+                justify-content: center;
+                border: 0.1px solid #fff;
+                border-radius: 50%;
+                align-items: center;
+                transition: all .2s linear;
+
+                &:hover {
+                    background-color: #FF9143;
+                    border-color: #FF9143;
+                    box-shadow: 0px 1px 13px rgba(33, 14, 1, 0.451);
+                }
+            }
+        }
+    }
+
+    &_menu_lists {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        width: 100%;
+        margin-top: 53px;
+
+        .footer_list_item {
+            ul {
+                margin-top: 28px;
+
+            }
+
+            .footer_link_title {
+                color: #FFF;
+                font-family: 'Inter';
+                font-size: 28px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                text-transform: uppercase;
+            }
+
+            a {
+                color: #FFF;
+                font-family: 'Inter';
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 44px;
+                border-bottom: 0.5px solid transparent;
+                padding-bottom: 5px;
+                transition: all .2s linear;
+
+                &:hover {
+                    color: #FF9143;
+                    border-color: #FF9143;
+                }
+            }
+        }
+    }
+
+    &_center {
+        margin-top: 34px;
+        display: flex;
+        gap: 44px;
+        color: #FFF;
+        font-family: "Yandex Sans Text";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+
+        &.next {
+            gap: 35px;
+            margin-top: 64px;
+        }
+    }
+
+    &_bottom {
+        padding: 83px 0 135px;
+        display: flex;
+        width: 100%;
+        color: #FFF;
+        font-family: "Yandex Sans Text";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+    }
+}
