@@ -15,18 +15,22 @@ $(document).ready(function(){
         slidesToScroll: 1,
 
   });
+  
+
   $('.slides_target').slick({
-    vertical: true,           // Vertikal slayderni yoqish
-    verticalSwiping: false,    // Vertikal siljish uchun
-    slidesToShow:3,          // Faqat bitta slaydni ko'rsatish
-    slidesToScroll: 1,        // Har bir siljish uchun 1 ta slayd
-    // centerMode: true,         // Markazga joylashgan slaydni ko'rsatish
-    focusOnSelect: true,      // Slaydga bosish bilan faol qilish
-    autoplay: true,           // Avtomatik o‘tish
-    autoplaySpeed: 3000,      // 2 soniya kutish
-    infinite: true,           // Ustma-ust qaytish imkoniyati
-    arrows: false,             // O'ng va chap tugmalar
-    dots: false               // Nuqtalarni o'chirish
-  });
+    vertical: true,         
+    verticalSwiping:true,
+    slidesToShow:1,          
+    slidesToScroll: 1,    
+    // centerMode: true,       
+    focusOnSelect: true,    
+    autoplay: true,          
+    autoplaySpeed: 1000,    
+    arrows: false,            
+    dots: false,              
+    speed:300,
+    infinite: true, 
+  });  
+
 }
 )

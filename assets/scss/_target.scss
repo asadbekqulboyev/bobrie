@@ -1,6 +1,6 @@
 .target {
     background: linear-gradient(154deg, #4C9FFF 10.76%, #3593FF 40.42%, #004595 88.83%);
-
+padding-bottom: 200px;
     &_info {
         color: #FFF;
         font-family: "Yandex Sans Text";
@@ -20,11 +20,21 @@
             right: 50px;
             top: 20px;
         }
+        .bottom{
+            top: 60%;
+            right: -40%;
+        }
+    }
+    &_img{
+        position: relative;
+        z-index: 11212313;
+    
     }
     &_line{
         position: absolute;
-        bottom: 0;
-        right:-351px;
+        bottom: -49%;
+        right:-320px;
+        
     }
     .container{
         align-items:center;
@@ -32,16 +42,25 @@
     .target_slide{
         width:702px;
         flex: 0 0 auto;
+        position: relative;
         .slides_target{
             margin: 0 auto;
             width: fit-content;
             width: 380px;
+            position: absolute;
+            top: 47%;
+            right: 0;
+            left: 5%;
+            z-index: 234532;
+            padding-top: 20px;
             .slide_item {
                 background: #fff;
                 border-radius: 30px;
                 padding: 40px 65px 40px 40px;
                 width: 380px;
-                .slide_title {
+                position: relative;
+                z-index: 234532;
+               .slide_title {
                     color: #2B4461;
                     font-family: "Yandex Sans Text";
                     font-size: 28px;
@@ -50,9 +69,7 @@
                     line-height: 32px;
                     letter-spacing: -1.12px;
                     margin-top: 70px;
-
                 }
-    
                 .slide_description {
                     color: #B2C4D9;
                     font-family: "Yandex Sans Text";
@@ -63,41 +80,62 @@
                     letter-spacing: -0.84px;
                 }
             }
+            &::after{
+                content: '';
+                display: block;
+                width: 90%;
+                background: #fff;
+                opacity: .8;
+                height: 75px;
+                top: -10px;
+                position: absolute;
+                left: 0;
+                right: 0;
+                z-index: 1;
+                margin: 0 auto;
+                opacity: 0.8;
+                border-radius: 30px 30px  0 0 ;
+            }
+            &::before{
+                border-radius: 30px 30px  0 0 ;
+                content: '';
+                display: block;
+                overflow: hidden;
+                opacity: 0.7;
+                width: 96%;
+                background: #fff;
+                left: 0;
+                right: 0;
+                margin: 0 auto;
+                opacity: .9;
+                height: 50px;
+                position: absolute;
+                top: 5px;
+                z-index: 2;
+
+
+            }
         }
+       
      }
 
-     .slides_target{
-        position: relative;
-        // height: 300px;  /* Slayder balandligi */
-      }
+}
 
-    padding-bottom: 70px;
-    .slides_target{
-        padding-top: 20px;
-        padding-bottom: 20px;
-        position: relative;
-    }
-
-    }
 .slick-slide{
-    transform: scale(.4);
+    z-index: 23213324243;
+    position: relative;
+    transform: scale(0.95);
+    transition: all .2s linear;
     &.slick-active{
-        transform: scale(.7);
-        opacity: 1;
-    }
-    // &.slick-cloned{
-    //     border-radius: 30px;
-    //     background: #00142a;
-    //     transform: scale(.8);
-    // }
-    &.slick-current{
-        border-radius: 30px;
-        background: #0c2f56;
         transform: scale(1);
-        position: absolute; top: 0;
-        left: 0;
-        right: 0; 
-        margin: 0 auto;
-        z-index: 2;
     }
+
+}
+.slick-track{
+    border-radius: 30px;
+    overflow: hidden;
+}
+.slick-list{
+    overflow: hidden
+    ;
 }

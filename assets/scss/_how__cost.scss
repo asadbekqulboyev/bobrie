@@ -16,6 +16,7 @@
     letter-spacing: 6.8px;
     text-transform: uppercase;
     margin-top: 38px;
+    text-align: center;
   }
 
   &--row {
@@ -25,7 +26,10 @@
     gap: 160px;
     margin-right: auto;
     margin-top: 133px;
-
+    @media (max-width:1300px) {
+      // width: 100%;
+      gap: 0 80px;
+    }
     h2 {
       max-width: 605px;
       color: #2b4461;
@@ -34,7 +38,9 @@
       font-style: normal;
       font-weight: 700;
       line-height: 110px;
-      /* 84.615% */
+      @media (max-width:1300px) {
+       max-width:400px;
+      }
       letter-spacing: -5.2px;
     }
 
