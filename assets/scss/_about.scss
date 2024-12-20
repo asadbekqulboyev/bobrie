@@ -2,6 +2,10 @@
     padding-top: 163px;
     background: #FFFFFF;
 
+    @media (max-width:1200px) {
+        padding-top: 60px;
+    }
+
     &_title {
         color: #2B4460;
         text-align: center;
@@ -12,8 +16,25 @@
         line-height: 77px;
         letter-spacing: -2.88px;
 
+        @media (max-width:1200px) {
+            font-size: 48px;
+            line-height: normal;
+        }
+
+        @media (max-width:768px) {
+            font-size: 48px;
+            line-height: normal;
+        }
+
         span {
             color: #FF9143;
+        }
+    }
+
+    .about_logos_content {
+        @media (max-width:1200px) {
+            width: 100%;
+            max-width: 1200px;
         }
     }
 
@@ -23,6 +44,30 @@
         align-items: center;
         justify-content: space-between;
         width: 100%;
+
+        @media (max-width:1200px) {
+            margin-left: 0;
+            gap: 30px;
+            overflow-y: auto;
+            margin-top: 35px;
+        }
+
+        .logo_item {
+            @media (max-width:1200px) {
+                flex: 0 0 auto;
+                display: block;
+            }
+
+            @media (max-width:768px) {
+                height: 34px;
+
+                img {
+                    height: 100%;
+                    object-fit: contain;
+                }
+            }
+
+        }
     }
 
     &_banner {
@@ -37,6 +82,12 @@
             position: absolute;
             top: -134px;
             left: -200px;
+
+            @media (max-width:1200px) {
+                top: -370px;
+                width: 190px;
+                left: -80px;
+            }
         }
 
         .right_img {
@@ -44,16 +95,38 @@
             right: -250px;
             bottom: -320px;
             width: 780px;
+
+            @media (max-width:1400px) {
+                width: 650px;
+            }
+
+            @media (max-width:1200px) {
+                width: 550px;
+            }
         }
 
         .bottom_img {
             position: absolute;
             bottom: -380px;
             right: 400px;
+
+            @media (max-width:1200px) {
+                width: 320px;
+                right: 200px;
+                bottom: -300px;
+            }
         }
 
         .banner_info {
             padding-left: 153px;
+
+            @media (max-width:1200px) {
+                padding-left: 35px;
+            }
+
+            @media (max-width:768px) {
+                padding: 33px;
+            }
 
             .section_title {
                 color: #fff;
@@ -80,11 +153,28 @@
         width: 80%;
         margin-top: 65px;
 
+        @media (max-width:1200px) {
+            width: 96%;
+        }
+
+        @media (max-width:768px) {
+            flex-direction: column;
+            width: 100%;
+        }
+
         &_item {
             width: calc(50% - 30px);
             display: flex;
             gap: 15px;
             align-items: flex-start;
+
+            @media (max-width:1200px) {
+                width: calc(50% - 15px);
+            }
+
+            @media (max-width:768px) {
+                width: 100%;
+            }
 
             .list_number {
                 position: relative;
@@ -128,6 +218,11 @@
                 font-style: normal;
                 font-weight: 700;
                 line-height: 40px;
+
+                @media (max-width:1200px) {
+                    font-size: 24px;
+                    line-height: normal;
+                }
             }
 
             .list_subtitle {
@@ -169,6 +264,31 @@
             position: relative;
             width: 100%;
 
+            @media (max-width:1400px) {
+                padding-top: 60px;
+                font-size: 109px;
+            }
+
+            @media (max-width:1200px) {
+                font-size: 70px;
+            }
+
+            @media (max-width:768px) {
+                text-align: center;
+                text-align: center;
+                font-family: "Yandex Sans Text";
+                font-size: 48px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 44px;
+                /* 91.667% */
+                letter-spacing: -1.92px;
+
+                br {
+                    display: none;
+                }
+            }
+
             span {
                 color: #FF9143;
             }
@@ -177,7 +297,20 @@
                 position: absolute;
                 right: 20px;
                 top: 20px;
+
+                @media (max-width:1400px) {
+                    top: 109px;
+                }
+
+                @media (max-width:1200px) {
+                    width: 120px;
+                }
             }
+        }
+
+        @media (max-width:1400px) {
+            padding-top: 60px;
+
         }
     }
 
@@ -196,9 +329,44 @@
             line-height: 77px;
             letter-spacing: -2.88px;
 
+            @media (max-width:1400px) {
+                font-size: 45px;
+            }
+
+            @media (max-width:1200px) {
+                font-size: 35px;
+                line-height: 50px;
+            }
+
+            @media (max-width:768px) {
+                font-size: 32px;
+                text-align: center;
+                line-height: normal;
+
+                br {
+                    display: none;
+                }
+            }
+
             span {
                 color: #FFA137;
             }
+        }
+
+        img {
+            @media (max-width:1200px) {
+                width: 50%;
+            }
+
+            @media (max-width:768px) {
+                width: 100%;
+
+            }
+        }
+
+        @media (max-width:768px) {
+            flex-direction: column-reverse;
+            gap: 19px;
         }
     }
 
@@ -218,5 +386,24 @@
         line-height: 110px;
         letter-spacing: -5.2px;
         gap: 25px;
+
+        @media (max-width:1200px) {
+            font-size: 80px;
+            padding: 100px 0;
+        }
+
+        @media (max-width:768px) {
+            font-size: 34px;
+            letter-spacing: normal;
+            padding: 36px 20px;
+            gap: 17px;
+        }
+
+        img {
+            @media (max-width:768px) {
+                width: 34px;
+                flex: 0 0 auto;
+            }
+        }
     }
 }

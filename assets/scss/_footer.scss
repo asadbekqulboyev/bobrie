@@ -9,7 +9,10 @@
         align-items: center;
         justify-content: space-between;
         width: 100%;
-
+        @media (max-width:1200px) {
+            flex-wrap: wrap;
+            gap: 25px;
+        }
         .phone {
             color: #FFF;
             font-family: "Yandex Sans Text";
@@ -17,13 +20,21 @@
             font-style: normal;
             font-weight: 700;
             line-height: normal;
+            @media (max-width:1200px) {
+                font-size: 30px;
+                flex:  0 0  auto;
+            }
         }
 
         ul {
             display: flex;
             align-items: center;
             gap: 15px;
-
+            @media (max-width:768px) {
+                flex-wrap: wrap;          
+                justify-content: center;
+                gap: 10px;
+            }
             a {
                 width: 52px;
                 height: 52px;
@@ -49,11 +60,14 @@
         align-items: flex-start;
         width: 100%;
         margin-top: 53px;
-
+        flex-wrap: wrap;
+        @media (max-width:1200px) {
+            gap: 20px;
+            justify-content: flex-start;
+        }
         .footer_list_item {
             ul {
                 margin-top: 28px;
-
             }
 
             .footer_link_title {
