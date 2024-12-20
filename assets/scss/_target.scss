@@ -14,6 +14,9 @@
 
             justify-content: space-between;
         }
+        @media (max-width:768px) {
+            max-width: 390px;
+        }
     }
 
     &_info {
@@ -68,9 +71,15 @@
                 width: 140px;
             }
             @media (max-width:768px) {
-                right:56%;
+                right:39%;
                 top: 10px;
                 width: 67px;
+            }
+            @media (max-width:556px) {
+                right: 30%;
+            }
+            @media (max-width:340px) {
+                right: 25%;
             }
         }
 
@@ -88,11 +97,16 @@
                 width: 190px;
             }
             @media (max-width:768px) {
-                right:34%;
+                right:4%;
                 top: 60%;
                 width: 167px;
             }
-
+            @media (max-width:556px) {
+                right: -10%;
+            }
+            @media (max-width:340px) {
+                right: -17%;
+            }
         }
     }
 
@@ -197,14 +211,23 @@
 
                 @media (max-width:768px) {
                     border-radius: 15px;
-                    padding: 28px 0 26px 30px;
-                    width: 340px !important;
+                    padding: 30px 0 26px 28px;
+                    width: 240px !important;
                     padding-right: 20px !important;
                 }
-
+                @media (max-width:556px) {
+                    padding-right: 0px !important;
+                    width: 250px !important;
+                }
+                @media (max-width:340px) {
+                    width: 245px !important;
+                }
                 img {
                     position: relative;
                     z-index: 3342253;
+                    @media (max-width:768px) {
+                       width: 60px;
+                    }
                 }
 
                 .slide_title {
@@ -234,6 +257,9 @@
                     letter-spacing: -0.84px;
                     @media (max-width:768px) {
                         font-size: 18px;
+                        br{
+                            display: none;
+                        }
                     }
                 }
             }

@@ -17,6 +17,12 @@
     text-transform: uppercase;
     margin-top: 38px;
     text-align: center;
+    @media (max-width:556px){
+      font-size: 14px;
+      line-height: normal;
+      letter-spacing: 3px;
+      
+    }
   }
 
   &--row {
@@ -40,7 +46,10 @@
       flex-direction: column;
 
     }
-
+    @media (max-width:556px){
+      margin-top:43px;
+    }
+      
     h2 {
       max-width: 605px;
       color: #2b4461;
@@ -98,7 +107,8 @@
           display: none;
         }
       }
-
+      @media (max-width:556px){
+        font-size: 18px;}
       p {
         width: 242px;
         height: 80px;
@@ -325,7 +335,13 @@
         width: 100%;
         padding: 25px 50px;
       }
+      @media (max-width:556px){
+        font-size: 24px;
+        width: fit-content;
+        position: relative;
+        margin: 0 auto;
     }
   }
 
+}
 }

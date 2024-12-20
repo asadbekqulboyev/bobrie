@@ -15,17 +15,33 @@ $(document).ready(function(){
         slidesToScroll: 1,
         responsive: [
           {
-            breakpoint: 1560, // Max-width: 1560px dan pastda
+            breakpoint: 1560,
             settings: {
-              slidesToShow: 2, // 2ta slide
+              slidesToShow: 2.5, 
+              slidesToScroll: 1,
+
+            },
+          },{
+            breakpoint: 1024, 
+            settings: {
+              slidesToShow: 2,
               slidesToScroll: 1,
 
             },
           },
           {
-            breakpoint: 556, // Max-width: 556px dan pastda
+            breakpoint: 556, 
             settings: {
-              slidesToShow: 1, // 1ta slide
+              infinite:false,
+              slidesToShow: 1.25,
+              slidesToScroll: 1,
+            },
+          },
+          {
+            breakpoint: 36, 
+            settings: {
+              infinite:false,
+              slidesToShow: 1.01,
               slidesToScroll: 1,
             },
           },
@@ -55,7 +71,17 @@ $(document).ready(function(){
           verticalSwiping:false,
           infinite: false, 
         },
-      }
+      },
+      {
+        breakpoint: 380, 
+        settings: {
+          autoplay: false, 
+          vertical: false,  
+          slidesToShow:1.15, 
+          verticalSwiping:false,
+          infinite: false, 
+        },
+      },
     
     ]
   });  
@@ -83,6 +109,16 @@ $(document).ready(function(){
   
   // Resize uchun kuzatuv
   window.addEventListener('resize', checkTargetRellax);
+  $('.footer_link_title').click(function(){
+    $(this).next().slideToggle()
+    // if($(this).child('.icon'))
+    if($(this).children('.icon').text()=='+'){
+      $(this).children('.icon').text('-')
+    }else{
+      $(this).children('.icon').text('+')
+    }
+    
+  })
 }
 
 

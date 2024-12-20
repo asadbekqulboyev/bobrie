@@ -2,13 +2,17 @@
     background: #F6F9FC;
     padding: 60px 50px;
     position: relative;
+
     @media (max-width:768px) {
         display: flex;
         flex-direction: column;
         gap: 60px;
 
     }
-    .section_title{
+    @media (max-width:556px) {
+        padding: 45px 40px 20px 35px;
+    }
+    .section_title {
         text-align: center;
         position: sticky;
         left: 0;
@@ -17,39 +21,48 @@
         bottom: auto;
         margin: auto auto;
         z-index: 22;
+
         @media (max-width:768px) {
-           top: 45px;
-           font-size: 48px;
-           order: -1;
-           br{
-            display: none;
-           }
+            top: 45px;
+            font-size: 48px;
+            order: -1;
+
+            br {
+                display: none;
+            }
         }
     }
+
     .faq_items {
         display: flex;
         justify-content: space-between;
         position: relative;
         z-index: 22;
+
         @media (max-width:768px) {
             flex-direction: column;
             gap: 40px;
         }
-        &.first{
-            .faq_item:nth-child(1){
+        
+        &.first {
+            .faq_item:nth-child(1) {
                 margin-top: 60px;
                 margin-left: 173px;
+
                 @media (max-width:1200px) {
                     margin-left: 0;
                 }
+
                 @media (max-width:768px) {
                     margin-top: 26px;
                 }
             }
         }
-        &.next{
-            .faq_item:nth-child(1){
+
+        &.next {
+            .faq_item:nth-child(1) {
                 margin-left: 318px;
+
                 @media (max-width:1560px) {
                     margin-left: 40px;
                 }
@@ -57,39 +70,58 @@
                 @media (max-width:1200px) {
                     margin-left: 0px;
                 }
+
                 @media (max-width:768px) {
                     width: 100%;
                 }
             }
-            .faq_item:nth-child(2){
+
+            .faq_item:nth-child(2) {
                 margin-top: 158px;
+
                 @media (max-width:1200px) {
                     margin-top: 50px;
                 }
             }
         }
-        .faq_item:nth-child(1){
-            .faq_request{
+
+        .faq_item:nth-child(1) {
+            .faq_request {
                 width: 380px;
+
                 @media (max-width:1200px) {
                     width: 240px;
                 }
+
                 @media (max-width:768px) {
+                    width: 100%;
+                }
+                @media (max-width:556px) {
                     width: 100%;
                 }
             }
         }
-        .faq_item:nth-child(2){
+
+        .faq_item:nth-child(2) {
             @media (max-width:1200px) {
                 width: 400px;
             }
-            .faq_request{
+            
+            @media (max-width:556px) {
+                width: 100%;
+            }
+            .faq_request {
                 width: 500px;
+
                 @media (max-width:1200px) {
                     width: 400px;
                 }
+                @media (max-width:556px) {
+                    width: 100%;
+                }
             }
         }
+
         .faq_quetion {
             border-radius: 20px;
             background: #FF9143;
@@ -104,23 +136,32 @@
             font-weight: 400;
             line-height: 50px;
             letter-spacing: -0.8px;
+
             @media (max-width:1560px) {
-                left:-40px;
+                left: -40px;
             }
+
             @media (max-width:1200px) {
                 font-size: 16px;
             }
+
             @media (max-width:768px) {
-font-size: 16px;
-font-style: normal;
-font-weight: 400;
-line-height: 40px;
-letter-spacing: -0.64px;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 40px;
+                letter-spacing: -0.64px;
+            }
+            @media (max-width:556px) {
+               line-height: 30px;
+               padding: 12px 18px 14px 20px;
+               left: 0;
             }
             img {
                 position: absolute;
                 left: -10px;
                 bottom: 0;
+
                 @media (max-width:768px) {
                     height: 26px;
                     left: -5px;
@@ -141,20 +182,22 @@ letter-spacing: -0.64px;
             font-weight: 400;
             line-height: 24px;
             letter-spacing: -0.68px;
+
             @media (max-width:1200px) {
                 font-size: 14px;
                 padding: 12px 18px 14px 20px;
             }
+
             img {
                 bottom: 0;
                 position: absolute;
                 right: -15px;
             }
-            span{
+
+            span {
                 color: #B2C4D9;
                 position: relative;
-            z-index: 2;
-
+                z-index: 2;
             }
         }
     }

@@ -6,7 +6,9 @@
     @media (max-width:1200px) {
         padding-top: 40px;
     }
-
+    @media (max-width:556px) {
+        padding-bottom: 59px;
+    }
     .sliders {
         margin-top: 40px;
         // padding-left: 90px;
@@ -19,6 +21,11 @@
         @media (max-width:768px) {
             width: calc(33.33% - 20px);   
         padding: 0 20px;
+
+        }
+        @media (max-width:556px) {
+            width: calc(33.33% - 10px);   
+        padding: 0 10px;
 
         }
         .slide_top {
@@ -81,7 +88,9 @@
                 padding: 30px 40px;
                 gap: 16px 0;
             }
-
+            @media (max-width:556px) {
+                padding:20px;
+            }
             p {
                 color: #2B4360;
                 font-family: "Yandex Sans Text";
