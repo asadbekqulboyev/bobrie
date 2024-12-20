@@ -646,6 +646,7 @@ ol li {
   position: absolute;
   top: -100px;
   right: -450px;
+  width: 250px;
 }
 @media (max-width: 1560px) {
   .hero .container.hero__container .hero__content .vk_358 {
@@ -660,7 +661,7 @@ ol li {
     right: -40px;
     top: 50px;
     z-index: 0;
-    width: 90px;
+    width: 190px;
   }
 }
 @media (max-width: 768px) {
