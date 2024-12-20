@@ -68,6 +68,9 @@
           transform: translate(0px, 90px);
           // width: 344px;
         }
+        @media (max-width:556px) {
+          transform: translate(0px, 94px);
+        }
       }
 
       .hero__sensor {
