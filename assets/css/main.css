@@ -836,7 +836,7 @@ ol li {
 .header .container .mobile__menu .action__mobile {
   display: flex;
   justify-content: center;
-  margin-bottom: 60px;
+  margin-bottom: 38px;
 }
 .header .container .mobile__menu .action__mobile .request {
   width: 243px;
@@ -2444,6 +2444,11 @@ ol li {
   background: linear-gradient(154deg, #4C9FFF 10.29%, #3593FF 39.95%, #004595 88.36%);
   padding-top: 126px;
   width: 100%;
+}
+@media (max-width: 556px) {
+  .footer {
+    padding-top: 60px;
+  }
 }
 .footer_top {
   display: flex;

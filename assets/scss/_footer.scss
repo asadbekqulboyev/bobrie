@@ -3,7 +3,9 @@
     background: linear-gradient(154deg, #4C9FFF 10.29%, #3593FF 39.95%, #004595 88.36%);
     padding-top: 126px;
     width: 100%;
-
+    @media (max-width:556px) {
+        padding-top: 60px;
+    }
     &_top {
         display: flex;
         align-items: center;
