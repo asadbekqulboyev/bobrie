@@ -1014,6 +1014,7 @@ ol li {
 }
 @media (max-width: 400px) {
   .header .container .mobile__menu {
+    max-width: calc(100% - 24px);
     left: 12px;
     padding: 12px;
   }
@@ -2898,6 +2899,11 @@ ol li {
     padding-bottom: 418px;
   }
 }
+@media (max-width: 556px) {
+  .form {
+    padding-top: 50px;
+  }
+}
 @media (max-width: 480px) {
   .form {
     background-position-x: 54%;
@@ -2939,6 +2945,11 @@ ol li {
 @media (max-width: 1200px) {
   .form .bobri_center {
     margin-left: 38%;
+  }
+}
+@media (max-width: 400px) {
+  .form .bobri_center {
+    margin-left: 25%;
   }
 }
 .form form {
@@ -2998,6 +3009,12 @@ ol li {
     padding: 32px 10px;
   }
 }
+@media (max-width: 400px) {
+  .form form button {
+    font-size: 20px;
+    padding: 30px;
+  }
+}
 .form form a {
   color: #FFF;
   text-align: center;
@@ -3008,6 +3025,11 @@ ol li {
   margin-top: 30px;
   font-weight: 400;
   line-height: normal;
+}
+@media (max-width: 556px) {
+  .form form a {
+    margin-top: 10px;
+  }
 }
 
 .ads {
