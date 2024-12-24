@@ -278,9 +278,9 @@
         position: absolute;
         top: 590px;
         left: -123px;
-        z-index: 1;
-
+        
         &.case {
+          z-index: 1;
           top: 90px;
           
         }
