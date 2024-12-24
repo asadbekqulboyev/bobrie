@@ -128,10 +128,10 @@ gsap.registerPlugin(ScrollTrigger);
 // Animatsiyani sozlash
 gsap.timeline({
 scrollTrigger: {
-  trigger: ".about", // Animatsiya qaysi bo‘limda boshlanishini ko‘rsating
-  start: "top center", // Qachon boshlanishi (bo‘lim tepa qismi oynaning markaziga yetganda)
-  end: "bottom top",   // Animatsiya qayerda tugashi (bo‘lim past qismi oynadan chiqishda)
-  scrub: true,         // Scroll bilan silliq animatsiya
+  trigger: ".about",
+  start: "top center",
+  end: "bottom top",
+  scrub: true,
 }
 })
 .to(".airplane_1", {

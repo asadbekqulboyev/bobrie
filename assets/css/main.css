@@ -1389,6 +1389,7 @@ ol li {
   .how__cost .how__cost--cards .card.active {
     width: 50%;
     padding: 22px 22px 50px 30px;
+    background: #edf1f7;
   }
 }
 @media (max-width: 768px) {
