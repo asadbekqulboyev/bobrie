@@ -5,10 +5,28 @@
   z-index: 9898989898989;
 
   @media (max-width: 400px) {
-    padding: 12px 0;
+    padding: 12px 0 30px;
   }
-
+  .logo_desctop{
+    position: relative;
+    img{
+      position: absolute;
+      top: -78px;
+      left: -40px;
+      @media (max-width:1200px) {
+        top: -40px;
+        width: 147px;
+        left: -15px;
+      }
+      @media (max-width:768px) {
+        top: -30px;
+        width: 117px;
+        left: -15px;
+      }
+    }
+  }
   .container {
+    
     .navbar {
       display: flex;
       justify-content: center;
@@ -26,6 +44,8 @@
         font-style: normal;
         font-weight: 400;
         letter-spacing: -0.84px;
+        line-height: 121px; 
+      
         @media (max-width: 920px) {
           color: #000;
         }
@@ -123,16 +143,16 @@
         flex-direction: column;
         align-items: center;
         gap: 20px;
-
-        color: #2b4461;
-        font-family: "Yandex Sans Text";
-        font-size: 24px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
-        letter-spacing: -0.96px;
-
         margin-bottom: 33px;
+        a{
+          color: #2B4461;
+font-family: "Yandex Sans Text";
+font-size: 24px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: -0.96px;
+        }
       }
 
       .action__mobile {

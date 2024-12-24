@@ -1,6 +1,12 @@
 .work {
     background: #F6F9FC;
-
+    padding-bottom: 135px;
+    @media (max-width:1200px) {
+        padding-bottom: 40px;
+    }
+    @media (max-width:768px) {
+        padding-bottom: 0px;
+    }
     .section_title {
         font-size: 100px;
 

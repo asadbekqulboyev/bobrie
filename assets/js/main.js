@@ -47,8 +47,6 @@ $(document).ready(function(){
           },
         ],
   });
-  
-
   $('.slides_target').slick({
     vertical: true,         
     verticalSwiping:true,
@@ -103,7 +101,6 @@ $(document).ready(function(){
           }
       }
   }
-  
   // Boshlang'ich tekshirish
   checkTargetRellax();
   
@@ -119,7 +116,7 @@ $(document).ready(function(){
     }
     
   })
-}
+}  
 
 
 )

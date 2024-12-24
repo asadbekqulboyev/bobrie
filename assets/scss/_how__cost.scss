@@ -127,7 +127,9 @@
         background-position: center;
         background-repeat: no-repeat;
         transform: rotate(7.5deg);
-
+        @media (max-width:1400px) {
+          right: 0;
+        }
         @media (max-width:1200px) {
           top: 120%;
           left: 0;
