@@ -1895,6 +1895,12 @@ ol li {
     width: 100%;
   }
 }
+@media (max-width: 768px) {
+  .target .target_slide .slides_target .slick-track {
+    display: flex;
+    align-items: flex-end;
+  }
+}
 .target .target_slide .slides_target .slick-list {
   transform: scaleY(-1);
   border-radius: 30px;
@@ -1923,11 +1929,14 @@ ol li {
     padding: 30px 0 26px 28px;
     width: 90% !important;
     padding-right: 20px !important;
+    height: auto;
+    min-height: 213px;
   }
 }
 @media (max-width: 556px) {
   .target .target_slide .slides_target .slide_item {
     padding-right: 0px !important;
+    min-height: 273px;
   }
 }
 .target .target_slide .slides_target .slide_item img {
@@ -2094,6 +2103,11 @@ ol li {
 }
 .faq .faq_items.next {
   margin-top: 173px;
+}
+@media (max-width: 768px) {
+  .faq .faq_items.next {
+    margin-top: 0;
+  }
 }
 .faq .faq_items.next .faq_item:nth-child(1) {
   margin-left: 318px;
@@ -2375,7 +2389,7 @@ ol li {
 }
 @media (max-width: 768px) {
   .about_banner .top_img {
-    top: -70%;
+    top: 0;
     bottom: auto;
   }
 }
@@ -2421,6 +2435,8 @@ ol li {
 }
 .about_banner .banner_info {
   padding-left: 153px;
+  position: relative;
+  z-index: 1;
 }
 @media (max-width: 1200px) {
   .about_banner .banner_info {
@@ -2675,8 +2691,15 @@ ol li {
     width: 120px;
   }
 }
+@media (max-width: 768px) {
+  .about_bottom_info .section_title img {
+    width: 90px;
+    right: 0;
+  }
+}
 @media (max-width: 556px) {
   .about_bottom_info .section_title img {
+    width: 120px;
     top: 24px;
     right: -65px;
     transform: rotate(-22deg);
@@ -2706,6 +2729,7 @@ ol li {
   font-weight: 300;
   line-height: 77px;
   letter-spacing: -2.88px;
+  width: 55%;
 }
 @media (max-width: 1400px) {
   .about_author .author_title {
@@ -2723,6 +2747,7 @@ ol li {
     font-size: 32px;
     text-align: center;
     line-height: normal;
+    width: 100%;
   }
   .about_author .author_title br {
     display: none;
@@ -2736,14 +2761,25 @@ ol li {
 .about_author .author_title span {
   color: #FFA137;
 }
-@media (max-width: 1200px) {
-  .about_author img {
-    width: 50%;
-  }
+.about_author .users {
+  display: flex;
+  width: 45%;
+  align-items: center;
+  justify-content: flex-end;
 }
 @media (max-width: 768px) {
-  .about_author img {
+  .about_author .users {
     width: 100%;
+    justify-content: center;
+  }
+}
+.about_author .users img {
+  width: 205px;
+  object-fit: contain;
+}
+@media (max-width: 1200px) {
+  .about_author .users img {
+    width: 114px;
   }
 }
 @media (max-width: 768px) {

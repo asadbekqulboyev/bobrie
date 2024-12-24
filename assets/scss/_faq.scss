@@ -70,6 +70,9 @@
 
         &.next {
             margin-top: 173px;
+            @media (max-width:768px) {
+               margin-top: 0;
+            }
             .faq_item:nth-child(1) {
                 margin-left: 318px;
 

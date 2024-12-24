@@ -85,6 +85,7 @@ $(document).ready(function(){
   });  
   // parallax 
   var rellax = new Rellax('.rellax');
+  
   // mobile none rellax
   let targetRellax = new Rellax('.target-rellax'); // Faqat o'chiriladigan parallax
 
@@ -103,7 +104,6 @@ $(document).ready(function(){
   }
   // Boshlang'ich tekshirish
   checkTargetRellax();
-  
   // Resize uchun kuzatuv
   window.addEventListener('resize', checkTargetRellax);
   $('.footer_link_title').click(function(){
@@ -116,7 +116,40 @@ $(document).ready(function(){
     }
     
   })
+  
 }  
 
 
 )
+// airplane
+// ScrollTrigger-ni GSAP-ga ulash
+gsap.registerPlugin(ScrollTrigger);
+
+// Animatsiyani sozlash
+gsap.timeline({
+scrollTrigger: {
+  trigger: ".about", // Animatsiya qaysi bo‘limda boshlanishini ko‘rsating
+  start: "top center", // Qachon boshlanishi (bo‘lim tepa qismi oynaning markaziga yetganda)
+  end: "bottom top",   // Animatsiya qayerda tugashi (bo‘lim past qismi oynadan chiqishda)
+  scrub: true,         // Scroll bilan silliq animatsiya
+}
+})
+.to(".airplane_1", {
+  x: "15vw",
+  y: "-10vh",
+  duration: 1,
+  ease: "power1.inOut"
+})
+.to(".airplane_2", {
+  x: "-15vw",
+  y: "-30vh",
+  duration: 1,
+  ease: "power1.inOut"
+}, "<") // Ikkinchi animatsiyani bir vaqtning o‘zida boshlash
+.to(".airplane_3", {
+  x: "100vw",
+  y: "-20vh",
+  duration: 1,
+  ease: "power1.inOut"
+}, "<");
+
