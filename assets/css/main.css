@@ -123,7 +123,13 @@ ol li {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  padding-top: 185px;
   align-items: flex-start;
+}
+@media (max-width: 768px) {
+  .hero .container.hero__container {
+    padding-top: 127px;
+  }
 }
 .hero .container.hero__container.case_content {
   padding-left: 80px;
@@ -981,8 +987,13 @@ ol li {
 .header {
   width: 100%;
   padding: 25px 0;
-  position: relative;
+  position: fixed;
   z-index: 9898989898989;
+  transition: all 0.2s linear;
+}
+.header.active {
+  background: rgba(8, 80, 161, 0.5);
+  backdrop-filter: blur(7.5px);
 }
 @media (max-width: 400px) {
   .header {
@@ -1091,13 +1102,13 @@ ol li {
   position: fixed;
   top: -424px;
   left: 30px;
-  z-index: 99999;
   background-color: #fff;
   opacity: 0;
   transition: all 0.3s ease;
-  top: -140%;
+  top: -1000px;
 }
 .header .container .mobile__menu.active {
+  z-index: 99999;
   top: 0;
   opacity: 1;
 }
@@ -1368,6 +1379,17 @@ ol li {
   flex-direction: column;
   justify-content: space-between;
   position: relative;
+}
+@media (max-width: 1200px) {
+  .how__cost .how__cost--cards .card:last-child {
+    background: #f8f8f8;
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .how__cost .how__cost--cards .card:last-child {
+    background: #fff;
+  }
 }
 @media (max-width: 1200px) {
   .how__cost .how__cost--cards .card {
@@ -2031,13 +2053,19 @@ ol li {
   background: #F6F9FC;
   padding: 60px 50px;
   position: relative;
+  overflow-y: scroll;
+  height: 830px;
 }
 @media (max-width: 768px) {
   .faq {
     display: flex;
     flex-direction: column;
     gap: 60px;
+    height: 460px;
   }
+}
+.faq::-webkit-scrollbar {
+  display: none;
 }
 @media (max-width: 556px) {
   .faq {
@@ -2305,7 +2333,12 @@ ol li {
   flex-wrap: nowrap;
   max-width: auto !important;
   overflow: hidden;
-  gap: 30px;
+  gap: 10%;
+}
+@media (max-width: 1560px) {
+  .about .about_logos_content {
+    gap: 5%;
+  }
 }
 .about_logos {
   margin-top: 70px;
@@ -2315,12 +2348,8 @@ ol li {
   gap: 30px;
   animation: scroll 10s linear infinite;
   flex: 0 0 auto;
-}
-.about_logos:nth-child(1) {
-  animation: scroll 16s linear infinite;
-}
-.about_logos:nth-child(2) {
-  animation: scroll 16s linear infinite;
+  min-width: 100%;
+  justify-content: space-between;
 }
 .about_logos::-webkit-scrollbar {
   display: none;
@@ -2383,7 +2412,7 @@ ol li {
 }
 @media (max-width: 1200px) {
   .about_banner .top_img {
-    top: -370px;
+    top: -20px;
     width: 190px;
     left: -80px;
   }
@@ -2845,7 +2874,7 @@ ol li {
 
 .footer {
   padding-top: 126px;
-  background: linear-gradient(0deg, #004799 0%, #004799 100%), #FAFBFD;
+  background: linear-gradient(0deg, #00346f 0%, #00397b 100%), #FAFBFD;
   width: 100%;
   position: relative;
 }
@@ -2857,7 +2886,7 @@ ol li {
   left: 0;
   top: 0;
   opacity: 0.85;
-  background: linear-gradient(154deg, #4C9FFF 10.29%, #3593FF 39.95%, #004595 88.36%);
+  background: linear-gradient(154deg, #0a63c8 10.29%, #3593FF 39.95%, #004595 88.36%);
 }
 .footer .container {
   position: relative;
@@ -3247,22 +3276,22 @@ ol li {
   }
 }
 
-.ads {
+.ads_content {
   background: #F6F9FC;
   padding-top: 60px;
   padding-bottom: 70px;
 }
-.ads .container {
+.ads_content .container {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
 }
 @media (max-width: 1200px) {
-  .ads .container {
+  .ads_content .container {
     flex-direction: column-reverse;
   }
 }
-.ads_left {
+.ads_content_left {
   color: #2B4461;
   font-family: "Yandex Sans Text";
   font-size: 24px;
@@ -3273,17 +3302,17 @@ ol li {
   max-width: 900px;
 }
 @media (max-width: 1400px) {
-  .ads_left {
+  .ads_content_left {
     max-width: 700px;
   }
 }
 @media (max-width: 768px) {
-  .ads_left {
+  .ads_content_left {
     font-size: 16px;
     max-width: 100%;
   }
 }
-.ads_left .ads_info_top {
+.ads_content_left .ads_info_top {
   border-radius: 20px;
   background: rgba(21, 100, 191, 0.05);
   padding: 40px 42px 42px 35px;
@@ -3291,64 +3320,64 @@ ol li {
   color: #2B4461;
 }
 @media (max-width: 768px) {
-  .ads_left .ads_info_top {
+  .ads_content_left .ads_info_top {
     padding: 23px 56px 25px 20px;
     border-radius: 10px;
   }
 }
-.ads_left .ads_text {
+.ads_content_left .ads_text {
   margin-top: 50px;
   display: flex;
   flex-direction: column;
   gap: 15px;
 }
 @media (max-width: 768px) {
-  .ads_left .ads_text {
+  .ads_content_left .ads_text {
     margin-top: 22px;
   }
 }
-.ads_left .ads_text.light {
+.ads_content_left .ads_text.light {
   padding: 40px 75px 40px 40px;
   border-radius: 20px;
   background: #FFF;
 }
 @media (max-width: 768px) {
-  .ads_left .ads_text.light {
+  .ads_content_left .ads_text.light {
     border-radius: 10px;
     padding: 23px 40px 25px 20px;
   }
 }
-.ads_left .ads_text b {
+.ads_content_left .ads_text b {
   padding-right: 8px;
 }
-.ads_left .ads_text a {
+.ads_content_left .ads_text a {
   color: #FF9143;
   font-weight: 700;
   text-decoration: none;
 }
 @media (max-width: 768px) {
-  .ads_left .ads_text a {
+  .ads_content_left .ads_text a {
     display: block;
   }
 }
-.ads_left .tarif_lists {
+.ads_content_left .tarif_lists {
   display: flex;
   flex-direction: column;
   gap: 45px;
   margin-top: 80px;
 }
 @media (max-width: 768px) {
-  .ads_left .tarif_lists {
+  .ads_content_left .tarif_lists {
     margin-top: 26px;
     gap: 12px;
   }
 }
-.ads_left .tarif_lists li {
+.ads_content_left .tarif_lists li {
   display: flex;
   align-items: center;
   gap: 23px;
 }
-.ads_left .tarif_lists li span {
+.ads_content_left .tarif_lists li span {
   color: #2B4461;
   font-family: "Yandex Sans Text";
   font-size: 36px;
@@ -3358,34 +3387,34 @@ ol li {
   letter-spacing: -1.44px;
 }
 @media (max-width: 768px) {
-  .ads_left .tarif_lists li span {
+  .ads_content_left .tarif_lists li span {
     line-height: 24px;
     letter-spacing: -0.8px;
     font-size: 20px;
   }
 }
-.ads_left .ads_info_section {
+.ads_content_left .ads_info_section {
   margin-top: 55px;
 }
 @media (max-width: 768px) {
-  .ads_left .ads_info_section {
+  .ads_content_left .ads_info_section {
     margin-top: 40px;
   }
-  .ads_left .ads_info_section.last .ads_title {
+  .ads_content_left .ads_info_section.last .ads_title {
     font-size: 28px;
   }
 }
-.ads_left .ads_info_section .ads_title {
+.ads_content_left .ads_info_section .ads_title {
   font-size: 100px;
 }
 @media (max-width: 1400px) {
-  .ads_left .ads_info_section .ads_title {
+  .ads_content_left .ads_info_section .ads_title {
     font-size: 70px;
     line-height: normal;
   }
 }
 @media (max-width: 768px) {
-  .ads_left .ads_info_section .ads_title {
+  .ads_content_left .ads_info_section .ads_title {
     color: #2B4461;
     font-family: "Yandex Sans Text";
     font-size: 30px;
@@ -3395,32 +3424,32 @@ ol li {
     letter-spacing: -1.44px;
   }
 }
-.ads_left .ads_info_section.first {
+.ads_content_left .ads_info_section.first {
   margin-top: 103px;
 }
 @media (max-width: 768px) {
-  .ads_left .ads_info_section.first {
+  .ads_content_left .ads_info_section.first {
     margin-top: 50px;
   }
 }
-.ads_left .ads_info_section .ads_description {
+.ads_content_left .ads_info_section .ads_description {
   margin-top: 34px;
 }
 @media (max-width: 768px) {
-  .ads_left .ads_info_section .ads_description {
+  .ads_content_left .ads_info_section .ads_description {
     margin-top: 15px;
   }
 }
-.ads_left .ads_info_section .ads_description_lists {
+.ads_content_left .ads_info_section .ads_description_lists {
   margin-top: 16px;
   line-height: 55px;
 }
 @media (max-width: 768px) {
-  .ads_left .ads_info_section .ads_description_lists {
+  .ads_content_left .ads_info_section .ads_description_lists {
     line-height: 35px;
   }
 }
-.ads_left .ads_info_section .sm_title {
+.ads_content_left .ads_info_section .sm_title {
   color: #2B4461;
   font-family: "Yandex Sans Text";
   font-size: 72px;
@@ -3431,7 +3460,7 @@ ol li {
   margin-top: 36px;
 }
 @media (max-width: 768px) {
-  .ads_left .ads_info_section .sm_title {
+  .ads_content_left .ads_info_section .sm_title {
     font-size: 30px;
     font-style: normal;
     font-weight: 500;
@@ -3440,35 +3469,35 @@ ol li {
     margin-top: 23px;
   }
 }
-.ads_left .ads_info_section .bottom {
+.ads_content_left .ads_info_section .bottom {
   margin-top: 25px;
 }
-.ads_left .ads_cards {
+.ads_content_left .ads_cards {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   margin-top: 52px;
 }
 @media (max-width: 768px) {
-  .ads_left .ads_cards {
+  .ads_content_left .ads_cards {
     flex-direction: column;
     gap: 20px;
   }
 }
-.ads_left .ads_cards a {
+.ads_content_left .ads_cards a {
   display: block;
   width: calc(50% - 13.5px);
 }
 @media (max-width: 768px) {
-  .ads_left .ads_cards a {
+  .ads_content_left .ads_cards a {
     width: 100%;
   }
 }
-.ads_left .ads_cards img {
+.ads_content_left .ads_cards img {
   width: 100%;
   object-fit: contain;
 }
-.ads_left .ads_cards .btn {
+.ads_content_left .ads_cards .btn {
   margin-top: 21px;
   width: 100%;
   text-align: center;
@@ -3476,34 +3505,34 @@ ol li {
   color: #2B4461;
 }
 @media (max-width: 768px) {
-  .ads_left .ads_cards .btn {
+  .ads_content_left .ads_cards .btn {
     margin-top: 0;
   }
 }
-.ads_contact {
+.ads_content_contact {
   position: sticky;
   top: 0;
   width: 440px;
 }
 @media (max-width: 1200px) {
-  .ads_contact {
+  .ads_content_contact {
     position: static;
     width: 100%;
     padding-bottom: 66px;
   }
 }
-.ads_contact .contact_info {
+.ads_content_contact .contact_info {
   padding: 40px;
   box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.05);
   border-radius: 20px;
   background: #fff;
 }
 @media (max-width: 768px) {
-  .ads_contact .contact_info {
+  .ads_content_contact .contact_info {
     padding: 30px;
   }
 }
-.ads_contact .contact_info .contact_title {
+.ads_content_contact .contact_info .contact_title {
   color: #2B4461;
   font-family: "Yandex Sans Text";
   font-size: 36px;
@@ -3513,22 +3542,22 @@ ol li {
   letter-spacing: -1.44px;
 }
 @media (max-width: 768px) {
-  .ads_contact .contact_info .contact_title {
+  .ads_content_contact .contact_info .contact_title {
     font-size: 24px;
     line-height: 50px;
   }
 }
-.ads_contact .contact_info ul {
+.ads_content_contact .contact_info ul {
   display: flex;
   flex-direction: column;
   gap: 16px 0;
 }
 @media (max-width: 768px) {
-  .ads_contact .contact_info ul {
+  .ads_content_contact .contact_info ul {
     gap: 10px;
   }
 }
-.ads_contact .contact_info ul a {
+.ads_content_contact .contact_info ul a {
   color: #2B4461;
   font-family: "Yandex Sans Text";
   font-size: 24px;
@@ -3540,39 +3569,39 @@ ol li {
   text-decoration-style: solid;
 }
 @media (max-width: 768px) {
-  .ads_contact .contact_info ul a {
+  .ads_content_contact .contact_info ul a {
     font-size: 18px;
   }
 }
-.ads_user {
+.ads_content_user {
   margin-top: 40px;
 }
 @media (max-width: 768px) {
-  .ads_user {
+  .ads_content_user {
     margin-top: 17px;
   }
 }
-.ads_user img {
+.ads_content_user img {
   border-radius: 20px;
 }
 @media (max-width: 768px) {
-  .ads_user img {
+  .ads_content_user img {
     width: 60px;
     border-radius: 10px;
   }
 }
-.ads_user_info {
+.ads_content_user_info {
   display: flex;
   gap: 30px;
   color: #2B4461;
   font-family: "Yandex Sans Text";
 }
 @media (max-width: 768px) {
-  .ads_user_info {
+  .ads_content_user_info {
     gap: 16px;
   }
 }
-.ads_user_info .user_name {
+.ads_content_user_info .user_name {
   font-size: 28px;
   font-weight: 500;
   line-height: 135%;
@@ -3580,22 +3609,22 @@ ol li {
   letter-spacing: -1.12px;
 }
 @media (max-width: 768px) {
-  .ads_user_info .user_name {
+  .ads_content_user_info .user_name {
     font-size: 20px;
   }
 }
-.ads_user_info p {
+.ads_content_user_info p {
   font-size: 18px;
   font-weight: 400;
   line-height: 135%;
   letter-spacing: -0.72px;
 }
 @media (max-width: 768px) {
-  .ads_user_info p {
+  .ads_content_user_info p {
     font-size: 12px;
   }
 }
-.ads_user .contact {
+.ads_content_user .contact {
   display: flex;
   align-items: center;
   color: #2B4461;
@@ -3608,11 +3637,11 @@ ol li {
   gap: 20px;
 }
 @media (max-width: 768px) {
-  .ads_user .contact {
+  .ads_content_user .contact {
     margin-top: 26px;
     font-size: 24px;
   }
-  .ads_user .contact img {
+  .ads_content_user .contact img {
     width: 30px;
   }
 }

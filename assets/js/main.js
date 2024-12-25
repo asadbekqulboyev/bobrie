@@ -136,7 +136,7 @@ scrollTrigger: {
 })
 .to(".airplane_1", {
   x: "15vw",
-  y: "-10vh",
+  y: "-40vh",
   duration: 1,
   ease: "power1.inOut"
 })
@@ -153,3 +153,12 @@ scrollTrigger: {
   ease: "power1.inOut"
 }, "<");
 
+$(window).scroll(function(){
+  console.log();
+  
+  if(scrollY>10){
+    $('.header').addClass('active')
+  }else{
+    $('.header').removeClass('active')
+  }
+})

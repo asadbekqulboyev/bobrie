@@ -40,7 +40,10 @@
         flex-wrap: nowrap;
         max-width:auto !important;
         overflow: hidden;
-        gap: 30px;
+        gap: 10%;
+        @media (max-width:1560px) {
+            gap: 5%;
+        }
     }
 
     &_logos {
@@ -51,12 +54,8 @@
         gap: 30px;
         animation: scroll 10s linear infinite; 
         flex:  0 0 auto;
-        &:nth-child(1){
-            animation: scroll 16s linear infinite;
-        }
-        &:nth-child(2){
-            animation: scroll 16s linear infinite;
-        }
+        min-width: 100%;
+        justify-content: space-between;
         &::-webkit-scrollbar{
             display: none;
         }
@@ -112,7 +111,7 @@
             left: -200px;
 
             @media (max-width:1200px) {
-                top: -370px;
+                top: -20px;
                 width: 190px;
                 left: -80px;
             }

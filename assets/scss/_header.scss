@@ -1,9 +1,13 @@
 .header {
   width: 100%;
   padding: 25px 0;
-  position: relative;
+  position: fixed;
   z-index: 9898989898989;
-
+  transition: all .2s linear;
+  &.active{
+     background: rgba(8, 80, 161, 0.50);
+  backdrop-filter: blur(7.5px);
+  }
   @media (max-width: 400px) {
     padding: 12px 0 30px;
   }
@@ -114,13 +118,13 @@
       position: fixed;
       top: -424px;
       left: 30px;
-      z-index: 99999;
       background-color: #fff;
       opacity: 0;
       transition: all 0.3s ease;
-      top: -140%;
+      top: -1000px;
       &.active {
-        top: 0;
+      z-index: 99999;
+      top: 0;
         opacity: 1;
       }
 

@@ -197,7 +197,15 @@
       flex-direction: column;
       justify-content: space-between;
       position: relative;
-
+      &:last-child{
+        @media (max-width:1200px) {
+        background: #f8f8f8;
+        width: 100%;
+      }
+      @media (max-width:768px) {
+        background: #fff;
+      }
+      }
       @media (max-width:1200px) {
         width: 50%;
         padding: 22px 22px 50px 30px;
