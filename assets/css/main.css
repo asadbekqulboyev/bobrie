@@ -3276,22 +3276,22 @@ ol li {
   }
 }
 
-.ads_content {
+.advantages {
   background: #F6F9FC;
   padding-top: 60px;
   padding-bottom: 70px;
 }
-.ads_content .container {
+.advantages .container {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
 }
 @media (max-width: 1200px) {
-  .ads_content .container {
+  .advantages .container {
     flex-direction: column-reverse;
   }
 }
-.ads_content_left {
+.advantages_left {
   color: #2B4461;
   font-family: "Yandex Sans Text";
   font-size: 24px;
@@ -3302,17 +3302,17 @@ ol li {
   max-width: 900px;
 }
 @media (max-width: 1400px) {
-  .ads_content_left {
+  .advantages_left {
     max-width: 700px;
   }
 }
 @media (max-width: 768px) {
-  .ads_content_left {
+  .advantages_left {
     font-size: 16px;
     max-width: 100%;
   }
 }
-.ads_content_left .ads_info_top {
+.advantages_left .ads_info_top {
   border-radius: 20px;
   background: rgba(21, 100, 191, 0.05);
   padding: 40px 42px 42px 35px;
@@ -3320,64 +3320,64 @@ ol li {
   color: #2B4461;
 }
 @media (max-width: 768px) {
-  .ads_content_left .ads_info_top {
+  .advantages_left .ads_info_top {
     padding: 23px 56px 25px 20px;
     border-radius: 10px;
   }
 }
-.ads_content_left .ads_text {
+.advantages_left .ads_text {
   margin-top: 50px;
   display: flex;
   flex-direction: column;
   gap: 15px;
 }
 @media (max-width: 768px) {
-  .ads_content_left .ads_text {
+  .advantages_left .ads_text {
     margin-top: 22px;
   }
 }
-.ads_content_left .ads_text.light {
+.advantages_left .ads_text.light {
   padding: 40px 75px 40px 40px;
   border-radius: 20px;
   background: #FFF;
 }
 @media (max-width: 768px) {
-  .ads_content_left .ads_text.light {
+  .advantages_left .ads_text.light {
     border-radius: 10px;
     padding: 23px 40px 25px 20px;
   }
 }
-.ads_content_left .ads_text b {
+.advantages_left .ads_text b {
   padding-right: 8px;
 }
-.ads_content_left .ads_text a {
+.advantages_left .ads_text a {
   color: #FF9143;
   font-weight: 700;
   text-decoration: none;
 }
 @media (max-width: 768px) {
-  .ads_content_left .ads_text a {
+  .advantages_left .ads_text a {
     display: block;
   }
 }
-.ads_content_left .tarif_lists {
+.advantages_left .tarif_lists {
   display: flex;
   flex-direction: column;
   gap: 45px;
   margin-top: 80px;
 }
 @media (max-width: 768px) {
-  .ads_content_left .tarif_lists {
+  .advantages_left .tarif_lists {
     margin-top: 26px;
     gap: 12px;
   }
 }
-.ads_content_left .tarif_lists li {
+.advantages_left .tarif_lists li {
   display: flex;
   align-items: center;
   gap: 23px;
 }
-.ads_content_left .tarif_lists li span {
+.advantages_left .tarif_lists li span {
   color: #2B4461;
   font-family: "Yandex Sans Text";
   font-size: 36px;
@@ -3387,34 +3387,34 @@ ol li {
   letter-spacing: -1.44px;
 }
 @media (max-width: 768px) {
-  .ads_content_left .tarif_lists li span {
+  .advantages_left .tarif_lists li span {
     line-height: 24px;
     letter-spacing: -0.8px;
     font-size: 20px;
   }
 }
-.ads_content_left .ads_info_section {
+.advantages_left .ads_info_section {
   margin-top: 55px;
 }
 @media (max-width: 768px) {
-  .ads_content_left .ads_info_section {
+  .advantages_left .ads_info_section {
     margin-top: 40px;
   }
-  .ads_content_left .ads_info_section.last .ads_title {
+  .advantages_left .ads_info_section.last .ads_title {
     font-size: 28px;
   }
 }
-.ads_content_left .ads_info_section .ads_title {
+.advantages_left .ads_info_section .ads_title {
   font-size: 100px;
 }
 @media (max-width: 1400px) {
-  .ads_content_left .ads_info_section .ads_title {
+  .advantages_left .ads_info_section .ads_title {
     font-size: 70px;
     line-height: normal;
   }
 }
 @media (max-width: 768px) {
-  .ads_content_left .ads_info_section .ads_title {
+  .advantages_left .ads_info_section .ads_title {
     color: #2B4461;
     font-family: "Yandex Sans Text";
     font-size: 30px;
@@ -3424,32 +3424,32 @@ ol li {
     letter-spacing: -1.44px;
   }
 }
-.ads_content_left .ads_info_section.first {
+.advantages_left .ads_info_section.first {
   margin-top: 103px;
 }
 @media (max-width: 768px) {
-  .ads_content_left .ads_info_section.first {
+  .advantages_left .ads_info_section.first {
     margin-top: 50px;
   }
 }
-.ads_content_left .ads_info_section .ads_description {
+.advantages_left .ads_info_section .ads_description {
   margin-top: 34px;
 }
 @media (max-width: 768px) {
-  .ads_content_left .ads_info_section .ads_description {
+  .advantages_left .ads_info_section .ads_description {
     margin-top: 15px;
   }
 }
-.ads_content_left .ads_info_section .ads_description_lists {
+.advantages_left .ads_info_section .ads_description_lists {
   margin-top: 16px;
   line-height: 55px;
 }
 @media (max-width: 768px) {
-  .ads_content_left .ads_info_section .ads_description_lists {
+  .advantages_left .ads_info_section .ads_description_lists {
     line-height: 35px;
   }
 }
-.ads_content_left .ads_info_section .sm_title {
+.advantages_left .ads_info_section .sm_title {
   color: #2B4461;
   font-family: "Yandex Sans Text";
   font-size: 72px;
@@ -3460,7 +3460,7 @@ ol li {
   margin-top: 36px;
 }
 @media (max-width: 768px) {
-  .ads_content_left .ads_info_section .sm_title {
+  .advantages_left .ads_info_section .sm_title {
     font-size: 30px;
     font-style: normal;
     font-weight: 500;
@@ -3469,35 +3469,35 @@ ol li {
     margin-top: 23px;
   }
 }
-.ads_content_left .ads_info_section .bottom {
+.advantages_left .ads_info_section .bottom {
   margin-top: 25px;
 }
-.ads_content_left .ads_cards {
+.advantages_left .ads_cards {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   margin-top: 52px;
 }
 @media (max-width: 768px) {
-  .ads_content_left .ads_cards {
+  .advantages_left .ads_cards {
     flex-direction: column;
     gap: 20px;
   }
 }
-.ads_content_left .ads_cards a {
+.advantages_left .ads_cards a {
   display: block;
   width: calc(50% - 13.5px);
 }
 @media (max-width: 768px) {
-  .ads_content_left .ads_cards a {
+  .advantages_left .ads_cards a {
     width: 100%;
   }
 }
-.ads_content_left .ads_cards img {
+.advantages_left .ads_cards img {
   width: 100%;
   object-fit: contain;
 }
-.ads_content_left .ads_cards .btn {
+.advantages_left .ads_cards .btn {
   margin-top: 21px;
   width: 100%;
   text-align: center;
@@ -3505,34 +3505,34 @@ ol li {
   color: #2B4461;
 }
 @media (max-width: 768px) {
-  .ads_content_left .ads_cards .btn {
+  .advantages_left .ads_cards .btn {
     margin-top: 0;
   }
 }
-.ads_content_contact {
+.advantages_contact {
   position: sticky;
   top: 0;
   width: 440px;
 }
 @media (max-width: 1200px) {
-  .ads_content_contact {
+  .advantages_contact {
     position: static;
     width: 100%;
     padding-bottom: 66px;
   }
 }
-.ads_content_contact .contact_info {
+.advantages_contact .contact_info {
   padding: 40px;
   box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.05);
   border-radius: 20px;
   background: #fff;
 }
 @media (max-width: 768px) {
-  .ads_content_contact .contact_info {
+  .advantages_contact .contact_info {
     padding: 30px;
   }
 }
-.ads_content_contact .contact_info .contact_title {
+.advantages_contact .contact_info .contact_title {
   color: #2B4461;
   font-family: "Yandex Sans Text";
   font-size: 36px;
@@ -3542,22 +3542,22 @@ ol li {
   letter-spacing: -1.44px;
 }
 @media (max-width: 768px) {
-  .ads_content_contact .contact_info .contact_title {
+  .advantages_contact .contact_info .contact_title {
     font-size: 24px;
     line-height: 50px;
   }
 }
-.ads_content_contact .contact_info ul {
+.advantages_contact .contact_info ul {
   display: flex;
   flex-direction: column;
   gap: 16px 0;
 }
 @media (max-width: 768px) {
-  .ads_content_contact .contact_info ul {
+  .advantages_contact .contact_info ul {
     gap: 10px;
   }
 }
-.ads_content_contact .contact_info ul a {
+.advantages_contact .contact_info ul a {
   color: #2B4461;
   font-family: "Yandex Sans Text";
   font-size: 24px;
@@ -3569,39 +3569,39 @@ ol li {
   text-decoration-style: solid;
 }
 @media (max-width: 768px) {
-  .ads_content_contact .contact_info ul a {
+  .advantages_contact .contact_info ul a {
     font-size: 18px;
   }
 }
-.ads_content_user {
+.advantages_user {
   margin-top: 40px;
 }
 @media (max-width: 768px) {
-  .ads_content_user {
+  .advantages_user {
     margin-top: 17px;
   }
 }
-.ads_content_user img {
+.advantages_user img {
   border-radius: 20px;
 }
 @media (max-width: 768px) {
-  .ads_content_user img {
+  .advantages_user img {
     width: 60px;
     border-radius: 10px;
   }
 }
-.ads_content_user_info {
+.advantages_user_info {
   display: flex;
   gap: 30px;
   color: #2B4461;
   font-family: "Yandex Sans Text";
 }
 @media (max-width: 768px) {
-  .ads_content_user_info {
+  .advantages_user_info {
     gap: 16px;
   }
 }
-.ads_content_user_info .user_name {
+.advantages_user_info .user_name {
   font-size: 28px;
   font-weight: 500;
   line-height: 135%;
@@ -3609,22 +3609,22 @@ ol li {
   letter-spacing: -1.12px;
 }
 @media (max-width: 768px) {
-  .ads_content_user_info .user_name {
+  .advantages_user_info .user_name {
     font-size: 20px;
   }
 }
-.ads_content_user_info p {
+.advantages_user_info p {
   font-size: 18px;
   font-weight: 400;
   line-height: 135%;
   letter-spacing: -0.72px;
 }
 @media (max-width: 768px) {
-  .ads_content_user_info p {
+  .advantages_user_info p {
     font-size: 12px;
   }
 }
-.ads_content_user .contact {
+.advantages_user .contact {
   display: flex;
   align-items: center;
   color: #2B4461;
@@ -3637,11 +3637,11 @@ ol li {
   gap: 20px;
 }
 @media (max-width: 768px) {
-  .ads_content_user .contact {
+  .advantages_user .contact {
     margin-top: 26px;
     font-size: 24px;
   }
-  .ads_content_user .contact img {
+  .advantages_user .contact img {
     width: 30px;
   }
 }
