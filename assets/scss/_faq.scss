@@ -2,13 +2,10 @@
     background: #F6F9FC;
     padding: 60px 50px;
     position: relative;
-    overflow-y: scroll;
-    height: 100vh;
     @media (max-width:768px) {
         display: flex;
         flex-direction: column;
         gap: 60px;
-        // height: 460px;
 
     }
     &::-webkit-scrollbar{
