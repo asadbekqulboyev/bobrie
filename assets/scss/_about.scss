@@ -34,63 +34,22 @@
             color: #FF9143;
         }
     }
-
-    .about_logos_content {
-        display: flex;
-        flex-wrap: nowrap;
-        max-width:auto !important;
-        overflow: hidden;
-        gap: 10%;
-        @media (max-width:1560px) {
-            gap: 5%;
-        }
-    }
-
     &_logos {
-        margin-top: 70px;
         display: flex;
-        align-items: center;
-        width: fit-content;
-        gap: 30px;
-        animation: scroll 10s linear infinite; 
-        flex:  0 0 auto;
-        min-width: 100%;
         justify-content: space-between;
-        &::-webkit-scrollbar{
-            display: none;
+margin-top: 78px;
+
+.logo_item {
+    padding-left: 30px;
+        img{
+            height: 50px;
+            width: 100%;
+            object-fit: contain;
         }
-        @media (max-width:1200px) {
-            margin-left: 0;
-            height: fit-content;
-            gap: 30px;
-            overflow-y: auto;
-            margin-top: 35px;
-        }
-
-        .logo_item {
-        width: fit-content;
-            @media (max-width:1200px) {
-                flex: 0 0 auto;
-                display: block;
-            }
-
-            @media (max-width:768px) {
-                img {
-                    height: 34px;
-                    object-fit: contain;
-                }
-            }
-
         }
     }
-    @keyframes scroll {
-        0% {
-            transform: translate3d(0, 0,0);
-        }
-        100% {
-            transform: translate3d(-100%, 0, 0);
-        }
-    }
+        
+    
     &_banner {
         background: linear-gradient(154deg, #4C9FFF 10.76%, #3593FF 40.42%, #004595 88.83%);
         padding-top: 106px;
@@ -117,8 +76,7 @@
             }
             @media (max-width:768px) {
                 top:0;
-                bottom: auto
-                ;
+                bottom: auto;
             }
         }
 

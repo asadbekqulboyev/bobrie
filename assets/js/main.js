@@ -116,11 +116,49 @@ $(document).ready(function(){
     }
     
   })
-  
+   
+
 }  
-
-
 )
+ // logo 
+ $('.about_logos').slick({
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 10,
+  slidesToShow:4.5,
+  speed: 6000,
+  dots: false,
+  cssEase: 'linear',
+  waitForAnimate: false,
+  pauseOnFocus: false, 
+  pauseOnHover: false,
+  responsive:[
+    {    
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 2, 
+        slidesToScroll: 2,
+      },
+      
+    },
+    {    
+      breakpoint: 992,
+      settings: {
+        slidesToShow: 2.5, 
+        slidesToScroll: 2.5,
+      },
+      
+    },
+    {    
+      breakpoint: 1250,
+      settings: {
+        slidesToShow: 3.2, 
+        slidesToScroll: 1,
+      },
+      
+    }
+  ]
+});
 // airplane
 // ScrollTrigger-ni GSAP-ga ulash
 gsap.registerPlugin(ScrollTrigger);
@@ -161,4 +199,6 @@ $(window).scroll(function(){
   }else{
     $('.header').removeClass('active')
   }
+
+
 })

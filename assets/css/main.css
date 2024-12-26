@@ -997,7 +997,7 @@ ol li {
 }
 @media (max-width: 400px) {
   .header {
-    padding: 12px 0 30px;
+    padding: 12px 0 20px;
   }
 }
 .header .logo_desctop {
@@ -1005,8 +1005,9 @@ ol li {
 }
 .header .logo_desctop img {
   position: absolute;
-  top: -78px;
-  left: -40px;
+  top: -50px;
+  left: -25px;
+  width: 180px;
 }
 @media (max-width: 1200px) {
   .header .logo_desctop img {
@@ -1040,7 +1041,7 @@ ol li {
   font-style: normal;
   font-weight: 400;
   letter-spacing: -0.84px;
-  line-height: 121px;
+  line-height: 55px;
 }
 @media (max-width: 920px) {
   .header .container .navbar a {
@@ -2328,63 +2329,18 @@ ol li {
 .about_title span {
   color: #FF9143;
 }
-.about .about_logos_content {
-  display: flex;
-  flex-wrap: nowrap;
-  max-width: auto !important;
-  overflow: hidden;
-  gap: 10%;
-}
-@media (max-width: 1560px) {
-  .about .about_logos_content {
-    gap: 5%;
-  }
-}
 .about_logos {
-  margin-top: 70px;
   display: flex;
-  align-items: center;
-  width: fit-content;
-  gap: 30px;
-  animation: scroll 10s linear infinite;
-  flex: 0 0 auto;
-  min-width: 100%;
   justify-content: space-between;
-}
-.about_logos::-webkit-scrollbar {
-  display: none;
-}
-@media (max-width: 1200px) {
-  .about_logos {
-    margin-left: 0;
-    height: fit-content;
-    gap: 30px;
-    overflow-y: auto;
-    margin-top: 35px;
-  }
+  margin-top: 78px;
 }
 .about_logos .logo_item {
-  width: fit-content;
+  padding-left: 30px;
 }
-@media (max-width: 1200px) {
-  .about_logos .logo_item {
-    flex: 0 0 auto;
-    display: block;
-  }
-}
-@media (max-width: 768px) {
-  .about_logos .logo_item img {
-    height: 34px;
-    object-fit: contain;
-  }
-}
-@keyframes scroll {
-  0% {
-    transform: translate3d(0, 0, 0);
-  }
-  100% {
-    transform: translate3d(-100%, 0, 0);
-  }
+.about_logos .logo_item img {
+  height: 50px;
+  width: 100%;
+  object-fit: contain;
 }
 .about_banner {
   background: linear-gradient(154deg, #4C9FFF 10.76%, #3593FF 40.42%, #004595 88.83%);
@@ -3511,7 +3467,7 @@ ol li {
 }
 .advantages_contact {
   position: sticky;
-  top: 0;
+  top: 140px;
   width: 440px;
 }
 @media (max-width: 1200px) {

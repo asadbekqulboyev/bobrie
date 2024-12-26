@@ -9,14 +9,15 @@
   backdrop-filter: blur(7.5px);
   }
   @media (max-width: 400px) {
-    padding: 12px 0 30px;
+    padding: 12px 0 20px;
   }
   .logo_desctop{
     position: relative;
     img{
       position: absolute;
-      top: -78px;
-      left: -40px;
+      top: -50px;
+      left: -25px;
+      width: 180px;
       @media (max-width:1200px) {
         top: -40px;
         width: 147px;
@@ -48,7 +49,7 @@
         font-style: normal;
         font-weight: 400;
         letter-spacing: -0.84px;
-        line-height: 121px; 
+        line-height: 55px; 
       
         @media (max-width: 920px) {
           color: #000;
