@@ -2055,14 +2055,13 @@ ol li {
   padding: 60px 50px;
   position: relative;
   overflow-y: scroll;
-  height: 830px;
+  height: 100vh;
 }
 @media (max-width: 768px) {
   .faq {
     display: flex;
     flex-direction: column;
     gap: 60px;
-    height: 460px;
   }
 }
 .faq::-webkit-scrollbar {
