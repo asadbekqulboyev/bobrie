@@ -2347,13 +2347,26 @@ ol li {
   width: 100%;
   overflow: hidden;
 }
-.about_logos .logo_item {
-  padding-right: 30px;
+.about_logos .slick-track {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  gap: 114px;
 }
-.about_logos .logo_item img {
-  height: 50px;
-  width: 100%;
-  object-fit: contain;
+@media (max-width: 1200px) {
+  .about_logos .slick-track {
+    gap: 70px;
+  }
+}
+@media (max-width: 768px) {
+  .about_logos .slick-track {
+    gap: 30px;
+  }
+}
+.about_logos .logo_item {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
 }
 .about_banner {
   background: linear-gradient(154deg, #4C9FFF 10.76%, #3593FF 40.42%, #004595 88.83%);

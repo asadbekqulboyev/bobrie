@@ -42,13 +42,28 @@
         margin-top: 78px;
         width: 100%;
         overflow: hidden;
+        .slick-track{
+            display: flex !important;
+            justify-content: center;
+            align-items: center;
+            gap: 114px;
+            @media (max-width:1200px) {
+                gap: 70px;
+            }
+            @media (max-width:768px) {
+                gap: 30px;
+            }
+        }
         .logo_item {
-            padding-right: 30px;
-                img{
-                    height: 50px;
-                    width: 100%;
-                    object-fit: contain;
-             }
+            display: flex !important;
+            justify-content: center;
+            align-items:center;
+            // padding-left: 114px;
+            //     img{
+            //         // height: 50px;
+            //         // width: 100%;
+            //         object-fit: contain;
+            //  }
         }
     }
 
