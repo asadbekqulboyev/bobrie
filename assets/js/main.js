@@ -116,19 +116,20 @@ $(document).ready(function(){
     }
     
   })
-   
-
-}  
-)
- // logo 
+   // logo 
  $('.about_logos').slick({
   slidesToScroll: 1,
   autoplay: true,
-  autoplaySpeed: 10,
-  slidesToShow:4.5,
-  speed: 6000,
+  slidesToShow:5,
+  autoplaySpeed: 0,
+  speed: 4500,
   dots: false,
+  arrows: false,
   cssEase: 'linear',
+  infinite: true,
+  draggable: false,
+swipe: false,
+touchMove: false,
   waitForAnimate: false,
   pauseOnFocus: false, 
   pauseOnHover: false,
@@ -192,8 +193,6 @@ scrollTrigger: {
 }, "<");
 
 $(window).scroll(function(){
-  console.log();
-  
   if(scrollY>10){
     $('.header').addClass('active')
   }else{
@@ -202,3 +201,6 @@ $(window).scroll(function(){
 
 
 })
+})
+
+

@@ -6,7 +6,19 @@
   transition: all .2s linear;
   &.active{
      background: rgba(8, 80, 161, 0.50);
-  backdrop-filter: blur(7.5px);
+     backdrop-filter: blur(7.5px);
+    .logo_desctop{
+    position: relative;
+    img{
+      position: absolute;
+      top: -40px;
+      left: -25px;
+      width: 130px;
+    }
+    }
+  .desctop_nav a{
+    line-height: 55px !important; 
+  }
   }
   @media (max-width: 400px) {
     padding: 12px 0 20px;
@@ -17,7 +29,8 @@
       position: absolute;
       top: -50px;
       left: -25px;
-      width: 180px;
+      width: 190px;
+      transform: all .2s linear;
       @media (max-width:1200px) {
         top: -40px;
         width: 147px;
@@ -49,7 +62,8 @@
         font-style: normal;
         font-weight: 400;
         letter-spacing: -0.84px;
-        line-height: 55px; 
+        line-height: 105px;
+        transition: all .2s linear; 
       
         @media (max-width: 920px) {
           color: #000;

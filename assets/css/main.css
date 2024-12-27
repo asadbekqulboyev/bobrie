@@ -995,6 +995,18 @@ ol li {
   background: rgba(8, 80, 161, 0.5);
   backdrop-filter: blur(7.5px);
 }
+.header.active .logo_desctop {
+  position: relative;
+}
+.header.active .logo_desctop img {
+  position: absolute;
+  top: -40px;
+  left: -25px;
+  width: 130px;
+}
+.header.active .desctop_nav a {
+  line-height: 55px !important;
+}
 @media (max-width: 400px) {
   .header {
     padding: 12px 0 20px;
@@ -1007,7 +1019,8 @@ ol li {
   position: absolute;
   top: -50px;
   left: -25px;
-  width: 180px;
+  width: 190px;
+  transform: all 0.2s linear;
 }
 @media (max-width: 1200px) {
   .header .logo_desctop img {
@@ -1041,7 +1054,8 @@ ol li {
   font-style: normal;
   font-weight: 400;
   letter-spacing: -0.84px;
-  line-height: 55px;
+  line-height: 105px;
+  transition: all 0.2s linear;
 }
 @media (max-width: 920px) {
   .header .container .navbar a {
@@ -2330,9 +2344,11 @@ ol li {
   display: flex;
   justify-content: space-between;
   margin-top: 78px;
+  width: 100%;
+  overflow: hidden;
 }
 .about_logos .logo_item {
-  padding-left: 30px;
+  padding-right: 30px;
 }
 .about_logos .logo_item img {
   height: 50px;
