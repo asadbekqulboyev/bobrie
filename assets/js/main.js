@@ -118,21 +118,15 @@ $(document).ready(function(){
   })
    // logo 
  $('.about_logos').slick({
-  slidesToScroll: 1,
   autoplay: true,
-  slidesToShow:5,
   autoplaySpeed: 0,
-  speed: 4500,
-  dots: false,
+  speed: 6000,
+  slidesToShow:5,
   arrows: false,
+  swipe: false,
   cssEase: 'linear',
-  infinite: true,
-  draggable: false,
-swipe: false,
-touchMove: false,
-  waitForAnimate: false,
-  pauseOnFocus: false, 
-  pauseOnHover: false,
+  pauseOnFocus: false,
+    pauseOnHover: false,
   responsive:[
     {    
       breakpoint: 768,
