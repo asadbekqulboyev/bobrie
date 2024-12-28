@@ -2340,34 +2340,6 @@ ol li {
 .about_title span {
   color: #FF9143;
 }
-.about_logos {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 78px;
-  width: 100%;
-  overflow: hidden;
-}
-.about_logos .slick-track {
-  display: flex !important;
-  justify-content: center;
-  align-items: center;
-  gap: 114px;
-}
-@media (max-width: 1200px) {
-  .about_logos .slick-track {
-    gap: 70px;
-  }
-}
-@media (max-width: 768px) {
-  .about_logos .slick-track {
-    gap: 30px;
-  }
-}
-.about_logos .logo_item {
-  display: flex !important;
-  justify-content: center;
-  align-items: center;
-}
 .about_banner {
   background: linear-gradient(154deg, #4C9FFF 10.76%, #3593FF 40.42%, #004595 88.83%);
   padding-top: 106px;
@@ -2851,6 +2823,40 @@ ol li {
 @media (max-width: 556px) {
   .about .big_button span {
     font-size: 28px;
+  }
+}
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+.about .about_logos_content {
+  margin-top: 70px;
+  overflow: hidden;
+  background: white;
+  white-space: nowrap;
+  position: relative;
+}
+@media (max-width: 556px) {
+  .about .about_logos_content {
+    margin-top: 22px;
+  }
+}
+.about .about_logos {
+  display: inline-block;
+  animation: 20s slide infinite linear;
+}
+.about .about_logos img {
+  height: 50px;
+  margin: 0 40px;
+}
+@media (max-width: 556px) {
+  .about .about_logos img {
+    object-fit: contain;
+    height: 30px;
   }
 }
 

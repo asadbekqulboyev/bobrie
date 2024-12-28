@@ -117,46 +117,46 @@ $(document).ready(function(){
     
   })
    // logo 
- $('.about_logos').slick({
-  autoplay: true,
-  autoplaySpeed: 0,
-  speed: 6000,
-  slidesToShow:5,
-  arrows: false,
-  swipe: false,
-  cssEase: 'linear',
-  pauseOnFocus: false,
-    pauseOnHover: false,
-  responsive:[
-    {    
-      breakpoint: 768,
-      settings: {
-        slidesToShow: 2, 
-        slidesToScroll: 2,
-      },
+//  $('.about_logos').slick({
+//   autoplay: true,
+//   autoplaySpeed: 0,
+//   speed: 6000,
+//   slidesToShow:5,
+//   arrows: false,
+//   swipe: false,
+//   cssEase: 'linear',
+//   pauseOnFocus: false,
+//     pauseOnHover: false,
+//   responsive:[
+//     {    
+//       breakpoint: 768,
+//       settings: {
+//         slidesToShow: 2, 
+//         slidesToScroll: 2,
+//       },
       
-    },
-    {    
-      breakpoint: 992,
-      settings: {
-        slidesToShow: 2.5, 
-        slidesToScroll: 2.5,
-      },
+//     },
+//     {    
+//       breakpoint: 992,
+//       settings: {
+//         slidesToShow: 2.5, 
+//         slidesToScroll: 2.5,
+//       },
       
-    },
-    {    
-      breakpoint: 1250,
-      settings: {
-        slidesToShow: 3.2, 
-        slidesToScroll: 1,
-      },
+//     },
+//     {    
+//       breakpoint: 1250,
+//       settings: {
+//         slidesToShow: 3.2, 
+//         slidesToScroll: 1,
+//       },
       
-    }
-  ]
-});
+//     }
+//   ]
+// });
 // airplane
 // ScrollTrigger-ni GSAP-ga ulash
-gsap.registerPlugin(ScrollTrigger);
+// gsap.registerPlugin(ScrollTrigger);
 
 // Animatsiyani sozlash
 gsap.timeline({
@@ -198,3 +198,5 @@ $(window).scroll(function(){
 })
 
 
+var copy = document.querySelector(".about_logos").cloneNode(true);
+document.querySelector(".about_logos_content").appendChild(copy);

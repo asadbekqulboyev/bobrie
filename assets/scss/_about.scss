@@ -37,34 +37,34 @@
     }
 
     &_logos {
-        display: flex;
-        justify-content: space-between;
-        margin-top: 78px;
-        width: 100%;
-        overflow: hidden;
-        .slick-track{
-            display: flex !important;
-            justify-content: center;
-            align-items: center;
-            gap: 114px;
-            @media (max-width:1200px) {
-                gap: 70px;
-            }
-            @media (max-width:768px) {
-                gap: 30px;
-            }
-        }
-        .logo_item {
-            display: flex !important;
-            justify-content: center;
-            align-items:center;
-            // padding-left: 114px;
-            //     img{
-            //         // height: 50px;
-            //         // width: 100%;
-            //         object-fit: contain;
-            //  }
-        }
+        // display: flex;
+        // justify-content: space-between;
+        // margin-top: 78px;
+        // width: 100%;
+        // overflow: hidden;
+        // .slick-track{
+        //     display: flex !important;
+        //     justify-content: center;
+        //     align-items: center;
+        //     gap: 114px;
+        //     @media (max-width:1200px) {
+        //         gap: 70px;
+        //     }
+        //     @media (max-width:768px) {
+        //         gap: 30px;
+        //     }
+        // }
+        // .logo_item {
+        //     display: flex !important;
+        //     justify-content: center;
+        //     align-items:center;
+        //     // padding-left: 114px;
+        //     //     img{
+        //     //         // height: 50px;
+        //     //         // width: 100%;
+        //     //         object-fit: contain;
+        //     //  }
+        // }
     }
 
 
@@ -546,4 +546,39 @@
             }
         }
     }
+    
+@keyframes slide {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+  
+  .about_logos_content {
+    margin-top: 70px;
+    overflow: hidden;
+    // padding: 60px 0;
+    background: white;
+    white-space: nowrap;
+    position: relative;
+    @media (max-width:556px) {
+        margin-top: 22px;
+    }
+  }
+  
+  .about_logos {
+    display: inline-block;
+    animation: 20s slide infinite linear;
+  }
+  
+  .about_logos img {
+    height: 50px;
+    margin: 0 40px;
+    @media (max-width:556px) {
+        object-fit: contain;
+        height: 30px;
+    }
+  }
 }
